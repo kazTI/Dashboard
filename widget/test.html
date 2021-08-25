@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="jquery-3.3.1.min.js"></script>
+    <link href="style.css" rel="stylesheet" type= "text/css">
+    <link href="sidebar_style.css" rel="stylesheet" type= "text/css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="jquery.ml-keyboard.css" />
+    <link href="color-picker.min.css" rel="stylesheet">
+    <title>
+        Dashboard
+    </title>
+</head>
+
+<body>
+
+<div class="slidecontainer">
+    <input type="range" min="50" max="300" value="100" class="slider" id="myRange">
+</div>
+
+<!--<button class="button button1" onclick="showSlider(); showDrpdwn()">T</button>-->
+
+
+<div id="fontSelect" style="width:200px;">
+    <select onchange="fontChange(this);" size="13" id="myDrpdwn" class="selectFont">
+        <option>Georgia</option>
+        <option>Palatino Linotype</option>
+        <option>Book Antiqua</option>
+        <option>Times New Roman</option>
+        <option>Arial</option>
+        <option>Helvetica</option>
+        <option>Arial Black</option>
+        <option>Impact</option>
+        <option>Lucida Sans Unicode</option>
+        <option>Tahoma</option>
+        <option>Verdana</option>
+        <option>Courier New</option>
+        <option>Comic Sans MS</option>
+    </select>
+</div>
+
+<div class="container" id="container"></div>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.js" type="text/javascript"></script>-->
+<!--<script type="text/javascript" src="http://randomibis.com/coolclock/coolclock.js"></script>-->
+<script type="text/javascript" src="widgets/coolclock.js"></script>
+<script type="text/javascript" src="jquery.ml-keyboard.min.js"></script>
+<script src="color-picker.min.js"></script>
+<script type="text/javascript" src="widgets/widget.js"></script>
+<script type="text/javascript" src="widgets/options_button.js"></script>
+<script type="text/javascript" src="widgets/background_image_button.js"></script>
+<script type="text/javascript" src="widgets/widget_classrooms.js"></script>
+<script type="text/javascript" src="widgets/widget_meme.js"></script>
+<script type="text/javascript" src="widgets/widget_events.js"></script>
+<script type="text/javascript" src="widgets/widget_drawnote.js"></script>
+<script type="text/javascript" src="widgets/widget_weather.js"></script>
+<script type="text/javascript" src="widgets/widget_OV.js"></script>
+<script type="text/javascript" src="widgets/widget_clock.js"></script>
+<script type="text/javascript" src="widgets/widget_shadowwall.js"></script>
+<script type="text/javascript" src="node_connector.js"></script>
+<script type="text/javascript" src=" base_config.js"></script>
+<script type="text/javascript" src="sidebar.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+
+* { /* Set font for all text */
+    user-select: none;
+}
+
+::-webkit-scrollbar { /* Turn off scrollbars for cleaner look */
+    display: none;
+}
+
+button:focus { /* Turn off blue outlines on buttons when they have been pressed */
+    outline:0;
+}
+
+input:focus { /* Turn off blue outlines on inputs when they have been pressed */
+    outline:0;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+	width: 100vw;
+	height: 100vh;
+}
+
+.ovtest {
+    margin-bottom: 3px;
+    border-radius: 7px;
+}
+
+.stationtest {
+    background-image: linear-gradient(to left, rgba(130,130,70,0), rgba(130,130,130,0.25));
+    margin-bottom: 3px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+
+.inlogText {
+    font: italic bold 10px/30px Open Sans, serif;
+}
+
+.stationNaam
+{
+    background-image: linear-gradient(to left, rgba(130,130,130,0), rgba(130,130,130,0.25));
+    margin-bottom: 3px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+.verwijderStation
+{
+    /* background-image: linear-gradient(to left, rgba(130,130,130,0), rgba(130,130,130,0.25));
+ padding-left: 7px;
+ border-radius: 7px;
+ margin: -1px;
+ border: solid red 1px;
+ box-sizing: border-box;*/
+    background-image: linear-gradient(to left, rgba(130,130,130,0), rgba(130,130,130,0.25));
+    margin-bottom: 3px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+.addStation
+{
+    /*background-image: linear-gradient(to left, rgba(130,130,130,0), rgba(130,130,130,0.25));
+padding-left: 7px;
+border-radius: 7px;
+margin: -1px;
+border: solid green 1px;
+box-sizing: border-box;*/
+    background-image: linear-gradient(to left, rgba(130,130,130,0), rgba(130,130,130,0.25));
+    margin-bottom: 3px;
+    border-radius: 7px;
+    padding-left: 7px;
+}
+
+.loginButton
+{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /*right: 10px;*/
+    background-color: rgba(202, 46, 21, 1);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    width: 70px;
+    height:70px;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(118, 11, 3, 1);
+    border-top: 3px solid rgba(238, 64, 37, 1);
+    
+    border-radius: 50%;
+    display: block;
+    z-index: 998;
+    /*position: absolute;
+    float: right;
+    bottom: 0;
+	z-index: 998;
+	height: 95vh;
+	border-radius: 5px;*/
+}
+
+.widget { /* Styling of widget */
+    position: absolute;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    overflow: hidden;
+}
+
+
+.widgetTopBar { /* Styling of red rop bar */
+    background-color: #DF013A;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    height: 30px;
+    border-radius: 5px 5px 0px 0px; /*top-left, top-right, bottom-right, bottom-left*/
+}
+
+.widgetNameWrapper { /* Styling of wrapper for widget name */
+    /*border: 1px #0FF dashed;*/
+    position: absolute;
+    display: inline-block;
+    color: #FFF;
+    padding: 0px;
+    margin: 0px;
+    margin-left: calc(-50% - 25px);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
+    cursor: move;
+}
+
+
+.widgetName { /* Styling of widget name */
+    /*border: 1px #000 solid;*/
+    padding: 0px;
+    margin: 0px;
+    margin-top: 2px;
+    height: 25px;
+    margin-left: 50px;
+
+}
+
+.widgetSettings { /* Styling of button for widget settings */
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: right;
+    padding: 0px;
+    margin-top: 2px;
+    margin-left: 0px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #DF013A;
+}
+
+.dropdown { /* Styling of dropdown menu */
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    margin-top: 30px;
+    width: 150px;
+    margin-left: calc(50% - 137px);
+    background-color: #FFF;
+    float: right;
+}
+
+.menuButton { /* Styling of buttons in dropdown menu */
+    display: block;
+    position: relative;
+    height: 30px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.body { /* Styling of widget body */
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 40px);
+}
+.optionsButton
+{
+	text-align: center;
+}
+
+.color-picker-box
+{
+    display:block;
+    margin-top:1px;
+    border-color:inherit;
+    float:left;
+    width:10%;
+    height:1.25em;
+    cursor:pointer;
+}
+.color-picker-box:first-child {clear:both}
+
+.slidecontainer 
+{
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #DF013A;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #DF013A;
+    cursor: pointer;
+}
+
+.button {
+    position: relative;
+    /*right: 10px;*/
+    background-color: rgba(202, 46, 21, 1);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    width: 70px;
+    height:70px;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(118, 11, 3, 1);
+	border-top: 3px solid rgba(238, 64, 37, 1);
+}
+
+.button1 {
+    border-radius: 50%;
+    display: block;
+    position: relative;
+}
+
+.selectFont {
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    background-color: #DF013A;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}

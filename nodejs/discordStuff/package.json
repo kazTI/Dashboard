@@ -1,0 +1,8 @@
+{
+“name”: “Dashboard HR”,
+“version”: “1.0.0”,
+“description”: “Discord bot for the HR Dashboard”,
+“main”: “node.js”,
+“author”: “Team Interactive, Owen Braber”,
+“dependencies”: {}
+}
